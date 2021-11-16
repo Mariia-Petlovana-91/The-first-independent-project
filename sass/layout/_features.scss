@@ -1,0 +1,13 @@
+.specialiti__item--features {
+  min-width: 270px;
+  min-height: 75px;
+}
+
+.specialiti__title-features {
+  margin-bottom: 10px;
+  color: var(--title-color-dark);
+}
+.specialiti__text-features {
+  @include font(14px, 1.71em, 0.03em);
+  color: var(--text-color-dark);
+}

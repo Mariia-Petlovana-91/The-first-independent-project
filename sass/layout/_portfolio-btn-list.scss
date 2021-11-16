@@ -1,0 +1,24 @@
+.btn-list--portfolio {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.btn-list__item--margin-right:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-list__portfolio--btn {
+  @include font(16px, 1.66em, 0.03em);
+  font-weight: 500;
+  text-align: center;
+  color: var(--title-color-dark);
+  padding: 6px 22px;
+  min-height: 38px;
+  &:hover,
+  &:focus {
+    background-color: var(--hover-focus-color-others);
+    color: var(--text-color-light);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

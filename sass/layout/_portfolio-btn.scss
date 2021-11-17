@@ -1,13 +1,13 @@
-.btn-list--portfolio {
+.portfolio-btn {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.btn-list__item--margin-right:not(:last-child) {
+.portfolio-btn__item:not(:last-child) {
   margin-right: 8px;
 }
-.btn-list__portfolio--btn {
+.portfolio-btn__btn {
   @include font(16px, 1.66em, 0.03em);
   font-weight: 500;
   text-align: center;

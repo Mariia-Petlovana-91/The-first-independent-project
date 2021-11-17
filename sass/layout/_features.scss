@@ -1,13 +1,25 @@
-.specialiti__item--features {
+.features {
+  display: flex;
+}
+.features__item {
+  margin-right: 30px;
   min-width: 270px;
   min-height: 75px;
+  &:nth-child(4n + 4) {
+    margin-right: 0px;
+  }
 }
-
-.specialiti__title-features {
+.features__icons {
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+  height: 120px;
+  padding: 25px 100px;
+}
+.features__title {
   margin-bottom: 10px;
   color: var(--title-color-dark);
 }
-.specialiti__text-features {
+.features__text {
   @include font(14px, 1.71em, 0.03em);
   color: var(--text-color-dark);
 }

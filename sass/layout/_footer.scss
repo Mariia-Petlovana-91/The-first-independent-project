@@ -8,44 +8,39 @@
   align-items: baseline;
   justify-content: space-between;
 }
-.logo__footer {
+.footer__logo {
   margin-bottom: 20px;
 }
-.contacts__item--footer {
+.footer__item {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
 }
-.contacts__item--footer:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.contacts__link--footer {
+.footer__link {
   color: var(--contacts-color-light);
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color-others);
+  }
 }
 .footer__google-address {
   transition: color var(--transition-duration) var(--transition-timing-function);
   color: var(--text-color-light);
 }
-.contacts__link--footer:hover,
-.contacts__link--footer:focus {
-  color: var(--hover-focus-color-others);
-}
 .footer__third-title {
   color: var(--title-color-light);
   margin-bottom: 20px;
 }
-.footer__social-links__link {
+.footer__social-links {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.social-links__icon--footer {
+.footer__social-icons {
   fill: var(--text-color-light);
 }
-
-.footer__social-links__link:hover,
-.footer__social-links__link:focus {
-  background-color: var(--hover-focus-color-others);
-}
-.footer__input--position {
+.footer__form {
   display: flex;
 }
 .footer__input {
@@ -57,16 +52,14 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
+
 .footer__input::placeholder {
   font-size: 16px;
   line-height: 1.25em;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer__input:hover,
-.footer__input:focus {
-  border-color: var(--akcent-color);
-}
+
 .footer__form-btn {
   @include font(16px, 1.88em, 0.06em);
   @include color(var(--akcent-color), var(--text-color-light), null);

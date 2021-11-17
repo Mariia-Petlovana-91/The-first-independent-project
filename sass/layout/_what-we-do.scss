@@ -1,3 +1,16 @@
 .section-what-we-do {
   padding-bottom: 94px;
 }
+.what-we-do {
+  position: relative;
+}
+.what-we-do__text {
+  @include flex(flex, center, center);
+  @include font(14px, 1.14em, 0.03em);
+  @include color(#2f303a80, var(--text-color-light), null);
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+  top: 224px;
+  text-transform: uppercase;
+}

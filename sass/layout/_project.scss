@@ -1,0 +1,51 @@
+.project__title-hero {
+  margin-bottom: 0px;
+}
+.project__item {
+  text-transform: capitalize;
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project__link:hover .project__overflow-appears,
+.project__link:focus .project__overflow-appears {
+  transform: translateY(0);
+}
+.project__overflow {
+  position: relative;
+  overflow: hidden;
+}
+.project__overflow-appears {
+  @include font(18px, 1.56em, 0.03em);
+  @include color(#2196f390, var(--text-color-light), null);
+  padding: 63px 24px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+.project__text-elements {
+  padding: 19px 23px;
+  background-color: #fff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.project__name {
+  @include font(18px, 2em, 0.03em);
+  color: var(--title-color-dark);
+}
+.project__text {
+  @include font(16px, 1.88em, 0.03em);
+  color: var(--text-color-dark);
+}

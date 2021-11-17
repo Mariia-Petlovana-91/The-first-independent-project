@@ -21,3 +21,12 @@
   padding: 12px;
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
+
+.social-links__link:hover,
+.social-links__link:focus {
+  background-color: var(--hover-focus-color-others);
+}
+.social-links__link:hover .social-links__icon,
+.social-links__link:focus .social-links__icon {
+  fill: #ffffff;
+}

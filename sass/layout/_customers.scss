@@ -1,12 +1,14 @@
-.specialiti__item--customers {
+.customers {
+  display: flex;
+}
+.customers__item {
   width: 170px;
   height: 92px;
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-
-.specialiti__link--customers {
+.customers__link {
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,11 +21,11 @@
     border-color: var(--hover-focus-color-others);
   }
 }
-.specialiti__icons--customers {
+.customers__icon {
   fill: #afb1b8;
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-.specialiti__link--customers:hover .specialiti__icons--customers,
-.specialiti__link--customers:focus .specialiti__icons--customers {
+.customers__link:hover .customers__icon,
+.customers__link:focus .customers__icon {
   fill: var(--hover-focus-color-others);
 }

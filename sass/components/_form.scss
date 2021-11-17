@@ -48,15 +48,15 @@
     outline-color: var(--akcent-color);
   }
 }
-.form-icon {
+.form__icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-.form__input:hover + .form-icon,
-.form__input:focus + .form-icon {
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon {
   fill: var(--akcent-color);
 }
 .form__btn--modal {

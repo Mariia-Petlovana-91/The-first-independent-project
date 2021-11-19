@@ -1,0 +1,57 @@
+.menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 25px;
+  background-color: violet;
+}
+.menu.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+.menu__btn {
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: var(--hover-focus-color-others);
+  }
+}
+.menu__btn--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.menu__nav {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.menu__nav-list {
+}
+.menu__nav-item {
+}
+.menu__nav-link {
+}
+.menu__nav-link--active {
+}
+.menu__contact-list {
+}
+.menu__contact-item {
+}
+.menu__contact-link {
+}
+.menu__contact-link--tel {
+}
+.menu__contact-link--mail {
+}
+.menu__social-list {
+  display: flex;
+}
+.menu__social-item {
+}
+.menu__social-link {
+}

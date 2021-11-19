@@ -1,19 +1,16 @@
 .head {
-  position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid var(--border-color);
+  @include flex(flex, space-between, center);
 }
 
-.head__elements {
-  // display: flex;
-  // align-items: center;
-}
-.head__logo {
-  margin-right: 93px;
-}
+// .head__logo {
+//   margin-right: 93px;
+// }
 // .head__contacts {
 //   margin-left: auto;
-//   @include flex(flex, center, center);
+// }
+// .menu__btn-open {
+//   background-color: transparent;
 // }

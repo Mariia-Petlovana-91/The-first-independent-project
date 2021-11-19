@@ -12,22 +12,14 @@
   <body class="body">
     <!--main header-->
     <header>
-      <div class=" container ">
-        <div class="head">
-      <a class="logo head__logo link" href="WebStudio">Web<span class="logo__word logo__word--dark">Studio</span></a>
-      <!-- mobail menu start -->
-      <button class="menu__btn menu__btn--open btn" type="button" data-menu-open>
-        <svg width="40px" height="40px">
-          <use class="menu__icon" href="./images/icons.svg#icon-menu"></use>
-       </svg>
-      </button>
-      <div class="menu is-hidden container" data-menu>
-        <button class="menu__btn menu__btn--close btn" type="button" data-menu-close>
-          <svg width="40px" height="40px">
-            <use class="" href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        <div  class="menu__nav">
+      <div class="menu is-hidden" data-menu>
+<button class="menu__btn menu__btn--close btn" type="button" data-menu-close>
+  <svg width="40px" height="40px">
+    <use class="" href="./images/icons.svg#icon-close-black"></use>
+  </svg>
+</button>
+      <div class="menu__elements">
+        <div>
         <nav>
           <ul class="menu__nav-list list no-size">
             <li class="menu__nav-item"><a class="menu__nav-link menu__nav-link--active link" href="./index.html">Студия</a></li>
@@ -35,12 +27,16 @@
             <li class="menu__nav-item"><a class="menu__nav-link link" href="Контакты">Контакты</a></li>
           </ul>
         </nav>
+        </div>
+        <div>
         <ul class="menu__contact-list list no-size">
           <li class="menu__contact-item">
             <a class="menu__contact-link menu__contact-link--tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           <li class="menu__contact-item">
             <a class="menu__contact-link menu__contact-link--mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         </ul>
+        </div>
+        <div>
         <ul class="menu__social-list list no-size">
           <li class="menu__social-item"><a class="menu__social-link link" href="">Instagram</a></li>
           <li class="menu__social-item"><a class="menu__social-link link" href="">Twitter</a></li>
@@ -48,8 +44,18 @@
           <li class="menu__social-item"><a class="menu__social-link link" href="">LinkedIn</a></li>
         </ul>
         </div>
-        </div>
+      </div>
+      </div>
      <!-- mobail menu end -->
+    <div class=" container ">
+      <div class="head">
+        <a class="logo head__logo link" href="WebStudio">Web<span class="logo__word logo__word--dark">Studio</span></a>
+        <!-- mobail menu start -->
+        <button class="menu__btn menu__btn--open btn" type="button" data-menu-open>
+          <svg width="40px" height="40px">
+            <use class="menu__icon" href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav-list nav list no-size">
             <li class="nav__item"><a class="nav__link nav__link--active link" href="./index.html">Студия</a></li>

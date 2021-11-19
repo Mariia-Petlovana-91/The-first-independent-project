@@ -414,10 +414,24 @@
   z-index: 100;
   top: 0;
   left: 0;
+  padding: 48px 25px;
   width: 100vw;
   height: 100vh;
-  padding: 48px 25px;
+  padding: 48px 40px;
   background-color: violet;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .menu {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu.is-open {
@@ -427,6 +441,7 @@
 }
 
 .menu__btn {
+  display: block;
   background-color: transparent;
 }
 
@@ -437,13 +452,24 @@
 .menu__btn--close {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 10px;
 }
 
-.menu__nav {
+.menu__elements {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-between;
+}
+
+.menu__nav-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+}
+
+.menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .menu__social-list {

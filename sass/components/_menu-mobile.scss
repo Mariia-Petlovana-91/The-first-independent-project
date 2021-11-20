@@ -1,20 +1,14 @@
 .menu {
-  @media screen and(min-width:480px) {
-    width: 480px;
-  }
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+  min-width: 8vh;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 25px;
   @media screen and(min-width:480px) {
     display: none;
   }
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  padding: 48px 25px;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-  background-color: violet;
-  margin: 0 auto;
 }
 .menu.is-open {
   visibility: visible;
@@ -22,7 +16,6 @@
   pointer-events: all;
 }
 .menu__btn {
-  display: block;
   background-color: transparent;
   &:hover,
   &:focus {
@@ -32,14 +25,12 @@
 .menu__btn--close {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 15px;
 }
 .menu__elements {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.menu__nav-list {
 }
 .menu__nav-item {
   font-weight: 500;
@@ -51,23 +42,64 @@
   }
 }
 .menu__nav-link {
+  color: var(--title-color-dark);
+  &:hover,
+  &:hover {
+    color: var(--akcent-color);
+  }
 }
 .menu__nav-link--active {
+  color: var(--akcent-color);
 }
 .menu__contact-list {
+  margin-bottom: 64px;
 }
 .menu__contact-item {
-}
-.menu__contact-link {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 .menu__contact-link--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--akcent-color);
+  &:focus,
+  &:hover {
+    color: var(--hover-focus-color-importmant-button);
+  }
 }
 .menu__contact-link--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--contacts-color-dark);
+  &:hover,
+  &:focus {
+    color: var(--akcent-color);
+  }
 }
 .menu__social-list {
   display: flex;
 }
 .menu__social-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  padding-right: 10px;
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  border-right: 1px solid var(--contacts-color-dark);
 }
 .menu__social-link {
+  color: var(--akcent-color);
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color-importmant-button);
+  }
 }

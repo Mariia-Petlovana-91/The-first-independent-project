@@ -410,17 +410,19 @@
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
-  flex: initial;
-  align-content: space-between;
-  background-color: #ffffff;
+  background-color: mediumspringgreen;
   position: fixed;
   z-index: 100;
   min-width: 8vh;
   width: 100vw;
   height: 100vh;
-  padding: 48px 25px;
+  padding: 48px 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu.is-open {

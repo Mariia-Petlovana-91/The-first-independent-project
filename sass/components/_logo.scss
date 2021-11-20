@@ -1,8 +1,19 @@
 .logo {
+  //MOBILE
+  @include font(24px, 1.17em, 0.03em);
   display: block;
   font-family: "Raleway", sans-serif;
-  @include font(26px, 1.19em, 0.03em);
   color: var(--akcent-color);
+}
+
+// TABLET
+@media screen and(min-width:768px) {
+  @include font(24px, 1.17em, 0.03em);
+}
+
+// LAPTOP
+@media screen and(min-width:1200px) {
+  @include font(26px, 1.19em, 0.03em);
 }
 .logo__word {
   display: inline-block;

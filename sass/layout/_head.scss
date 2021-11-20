@@ -1,16 +1,23 @@
 .head {
+  // MOBILE
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border-color);
   @include flex(flex, space-between, center);
+
+  // TABLET
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  // LAPTOP
+  @media screen and(min-width:1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
-// .head__logo {
-//   margin-right: 93px;
-// }
-// .head__contacts {
-//   margin-left: auto;
-// }
-// .menu__btn-open {
-//   background-color: transparent;
-// }
+.head__logo {
+  margin-right: 93px;
+}

@@ -13,19 +13,23 @@
   // TABLET
   font-weight: 500;
   @include font(12px, 1.17em, 0.02em);
-  &:not(::last-child) {
+  &:not(:last-child) {
     margin-bottom: 10px;
   }
 
   // LAPTOP
+
   @media screen and(min-width:1200px) {
     @include font(14px, 1.14em, 0.02em);
     &:not(:last-child) {
       margin-right: 30px;
+      margin-bottom: 0px;
     }
   }
 }
 .contacts__link {
+  @include flex(flex, none, center);
+
   transition: fill var(--transition-duration) var(--transition-timing-function);
   color: var(--contacts-color-dark);
   &:hover,
@@ -47,4 +51,19 @@
 .contacts__link:hover .contacts__icon,
 .contacts__link:focus .contacts__icon {
   fill: var(--hover-focus-color-others);
+}
+.contacts__icon--mail {
+  width: 14px;
+  height: 10px;
+  @media screen and(min-width:1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contacts__icon--tel {
+  width: 10px;
+  height: 14px;
+  @media screen and(min-width:1200px) {
+    height: 16px;
+  }
 }

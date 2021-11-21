@@ -135,7 +135,7 @@
   color: var(--logo-word-light);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav {
     display: none;
   }
@@ -177,7 +177,7 @@
   background-color: var(--akcent-color);
   display: block;
   position: absolute;
-  bottom: -36px;
+  bottom: -38px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -190,7 +190,7 @@
   margin-left: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     display: none;
   }
@@ -580,7 +580,12 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  overflow: scroll;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu.is-open {

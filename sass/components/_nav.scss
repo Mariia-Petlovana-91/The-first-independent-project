@@ -1,5 +1,5 @@
 .nav {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -33,7 +33,7 @@
     background-color: var(--akcent-color);
     display: block;
     position: absolute;
-    bottom: -36px;
+    bottom: -38px;
     @media screen and(min-width:1200px) {
       bottom: -32px;
     }

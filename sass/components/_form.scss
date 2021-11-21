@@ -6,10 +6,15 @@
   flex-direction: column;
 }
 .form__title {
-  @include font(20px, 1.15em, 0.03em);
+  @include font(20px, 1.5em, 00.03em);
   text-align: center;
-  color: #212121;
+  color: var(--title-color-dark);
   margin-bottom: 12px;
+
+  // LAPTOP
+  @media screen and(min-width:1200px) {
+    @include font(20px, 1.15em, 0.03em);
+  }
 }
 .form__label-text {
   @include font(12px, 1.17em, 0.01em);

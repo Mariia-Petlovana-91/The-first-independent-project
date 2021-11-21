@@ -1,4 +1,7 @@
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betweengi;
   background-color: mediumspringgreen;
   position: fixed;
   z-index: 100;
@@ -32,11 +35,12 @@
     display: none;
   }
 }
-.menu__elements {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
+// .menu__elements {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+// }
 .menu__nav-item {
   font-weight: 500;
   font-size: 40px;

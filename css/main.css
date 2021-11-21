@@ -574,6 +574,9 @@
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betweengi;
   background-color: mediumspringgreen;
   position: fixed;
   z-index: 100;
@@ -613,12 +616,6 @@
   .menu__btn--open {
     display: none;
   }
-}
-
-.menu__elements {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .menu__nav-item {

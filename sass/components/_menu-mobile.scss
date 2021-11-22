@@ -88,16 +88,24 @@
     font-size: 24px;
   }
 }
-
-.menu__social-link {
+.menu__list-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__item-social {
   font-weight: 500;
   @include font(18px, 1.22em, 0.02em);
-  border-right: 1px solid var(--contacts-color-dark);
-  color: var(--akcent-color);
-  padding-right: 10px;
   &:not(:first-child) {
     padding-left: 10px;
   }
+  &:not(:last-child) {
+    border-right: 1px solid var(--contacts-color-dark);
+    padding-right: 10px;
+  }
+}
+.menu__social-link {
+  color: var(--akcent-color);
+
   &:hover,
   &:focus {
     color: var(--hover-focus-color-importmant-button);

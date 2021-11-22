@@ -687,18 +687,29 @@
   }
 }
 
-.menu__social-link {
+.menu__list-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu__item-social {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22em;
   letter-spacing: 0.02em;
+}
+
+.menu__item-social:not(:first-child) {
+  padding-left: 10px;
+}
+
+.menu__item-social:not(:last-child) {
   border-right: 1px solid var(--contacts-color-dark);
-  color: var(--akcent-color);
   padding-right: 10px;
 }
 
-.menu__social-link:not(:first-child) {
-  padding-left: 10px;
+.menu__social-link {
+  color: var(--akcent-color);
 }
 
 .menu__social-link:hover, .menu__social-link:focus {

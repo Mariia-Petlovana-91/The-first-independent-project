@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-betweengi;
+  justify-content: space-between;
   background-color: mediumspringgreen;
   position: fixed;
   z-index: 100;
@@ -9,7 +9,7 @@
   height: 100vh;
   padding: 48px 40px;
   overflow: scroll;
-  @media screen and(min-width:767px) {
+  @media screen and(min-width:768px) {
     display: none;
   }
 }
@@ -36,18 +36,14 @@
   }
 }
 
-// .menu__elements {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-// }
 .menu__nav-item {
+  @include font(8vw, 1.18em, 0.02em);
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
   &:not(:last-child) {
     margin-bottom: 32px;
+  }
+  @media screen and(min-width:480px) {
+    font-size: 40px;
   }
 }
 .menu__nav-link {
@@ -70,43 +66,38 @@
 }
 .menu__contact-link--tel {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
+  @include font(8vw, 1.18em, 0.02em);
   color: var(--akcent-color);
   &:focus,
   &:hover {
     color: var(--hover-focus-color-importmant-button);
   }
+  @media screen and(min-width:480px) {
+    font-size: 34px;
+  }
 }
 .menu__contact-link--mail {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
+  @include font(8vw, 1.17em, 0.02em);
   color: var(--contacts-color-dark);
   &:hover,
   &:focus {
     color: var(--akcent-color);
   }
+  @media screen and(min-width:480px) {
+    font-size: 24px;
+  }
 }
-// .menu__social-list {
-//   display: flex;
-// }
-// .menu__social-item {
-// }
+
 .menu__social-link {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.02em;
+  @include font(18px, 1.22em, 0.02em);
+  border-right: 1px solid var(--contacts-color-dark);
+  color: var(--akcent-color);
   padding-right: 10px;
   &:not(:first-child) {
     padding-left: 10px;
   }
-
-  border-right: 1px solid var(--contacts-color-dark);
-  color: var(--akcent-color);
   &:hover,
   &:focus {
     color: var(--hover-focus-color-importmant-button);

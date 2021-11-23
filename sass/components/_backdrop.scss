@@ -4,9 +4,9 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
-  padding: 93px 15px 94px 15px;
+
   top: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   transition: opacity var(--transition-duration)
       var(--transition-timing-function),
     visibility var(--transition-duration) var(--transition-timing-function);

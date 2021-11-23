@@ -19,9 +19,13 @@
 .form__label-text {
   @include font(12px, 1.17em, 0.01em);
   color: #757575;
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
+  // &:hth(:last-child) {
+  //   margin-bottom: 0px;
+  // }
+}
+.form__label-text--comment {
+  margin-bottom: 20px;
 }
 
 .form__box-svg {

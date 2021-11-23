@@ -5,7 +5,7 @@
   position: fixed;
   padding: 93px 15px 94px 15px;
   top: 0;
-  overflow-y: scroll;
+  overflow: scroll;
   transition: opacity var(--transition-duration)
       var(--transition-timing-function),
     visibility var(--transition-duration) var(--transition-timing-function);

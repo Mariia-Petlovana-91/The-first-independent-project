@@ -15,8 +15,8 @@
   opacity: 0;
   pointer-events: none;
 }
-.is-hidden .modalwindow {
-  transform: scale(0.3);
+.is-hidden .modal {
+  transform: scale(0.7);
   transition: transform var(--transition-duration)
     var(--transition-timing-function);
 }

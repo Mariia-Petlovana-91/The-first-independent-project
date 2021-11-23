@@ -1,7 +1,7 @@
 .head {
   // MOBILE
-  padding-top: 16px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border-color);
   @include flex(flex, space-between, center);
 
@@ -14,7 +14,7 @@
   // LAPTOP
   @media screen and(min-width:1200px) {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 23px;
   }
 }
 

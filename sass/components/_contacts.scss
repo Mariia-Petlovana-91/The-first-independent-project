@@ -53,16 +53,22 @@
   fill: var(--hover-focus-color-others);
 }
 .contacts__icon--mail {
+  // TABLET
   width: 14px;
   height: 10px;
+
+  // LAPTOP
   @media screen and(min-width:1200px) {
     width: 16px;
     height: 12px;
   }
 }
 .contacts__icon--tel {
+  // TABLET
   width: 10px;
   height: 14px;
+
+  // LAPTOP
   @media screen and(min-width:1200px) {
     height: 16px;
   }

@@ -1,9 +1,16 @@
 .checkebox__label {
-  @include font(12px, 1.17em, 0.03em);
   color: #757575;
   @include flex(flex, center, center);
   margin-bottom: 30px;
   position: relative;
+  @include font(2vw, 1.17em, 0.03em);
+
+  // MOBILE 480PX <
+  @media screen and(min-width:480px) {
+    font-size: 12px;
+  }
+
+  //  LAPTOP
   @media screen and(min-width:1200px) {
     @include font(14px, 1.71em, 00.03em);
   }
@@ -51,6 +58,8 @@
   background-color: var(--akcent-color);
   position: absolute;
   bottom: 0px;
+
+  // LAPTOP
   @media screen and(min-width:1200px) {
     bottom: 4px;
   }

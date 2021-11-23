@@ -1,9 +1,12 @@
 .checkebox__label {
-  @include font(14px, 1.71em, 00.03em);
+  @include font(12px, 1.17em, 0.03em);
   color: #757575;
   @include flex(flex, center, center);
   margin-bottom: 30px;
   position: relative;
+  @media screen and(min-width:1200px) {
+    @include font(14px, 1.71em, 00.03em);
+  }
 }
 .checekebox__icon {
   display: block;
@@ -47,5 +50,8 @@
   height: 1px;
   background-color: var(--akcent-color);
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
+  @media screen and(min-width:1200px) {
+    bottom: 4px;
+  }
 }

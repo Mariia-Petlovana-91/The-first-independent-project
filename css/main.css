@@ -381,7 +381,10 @@
   max-width: 450px;
   width: 100%;
   background-color: #ffffff;
-  margin: 94px 15px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
@@ -390,9 +393,8 @@
 
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    max-width: 528px;
+    width: 100%;
   }
 }
 
@@ -518,8 +520,8 @@
 }
 
 .checkebox__label {
-  font-size: 14px;
-  line-height: 1.71em;
+  font-size: 12px;
+  line-height: 1.17em;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
@@ -527,6 +529,14 @@
   align-items: center;
   margin-bottom: 30px;
   position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkebox__label {
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+  }
 }
 
 .checekebox__icon {
@@ -572,7 +582,13 @@
   height: 1px;
   background-color: var(--akcent-color);
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checekebox__link::after {
+    bottom: 4px;
+  }
 }
 
 .menu {

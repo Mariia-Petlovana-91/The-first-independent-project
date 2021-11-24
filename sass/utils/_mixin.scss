@@ -13,3 +13,15 @@
   color: $color;
   fill: $fill;
 }
+@mixin net-first-part($f, $fw, $mt, $ml) {
+  display: $f;
+  flex-wrap: $fw;
+  margin-top: $mt;
+  margin-left: $ml;
+}
+@mixin net-second-part($mw, $mt, $ml, $fb) {
+  max-width: $mw;
+  margin-top: $mt;
+  margin-left: $ml;
+  flex-basis: $fb;
+}

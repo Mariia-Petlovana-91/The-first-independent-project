@@ -1,8 +1,14 @@
 .second-title {
-  @include font(36px, 1.17em, 0.03em);
+  @include font(28px, 1.18em, 0.03em);
   text-align: center;
   color: var(--title-color-dark);
+  @media screen and(min-width:1200px) {
+    @include font(36px, 1.17em, 0.03em);
+  }
 }
 .second-title--margin-bottom {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }

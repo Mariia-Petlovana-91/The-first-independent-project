@@ -1,10 +1,7 @@
 .features {
   // TABLET
   @media screen and(min-width:768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+    @include net-first-part(flex, wrap, -30px, -30px);
   }
 
   // LAPTOP
@@ -24,10 +21,7 @@
 
   // TABLET
   @media screen and(min-width:768px) {
-    max-width: 354px;
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc(100 / 2 -30px);
+    @include net-second-part(354px, 30px, 30px, calc(100 / 2 -30px));
   }
 
   // LAPTOP

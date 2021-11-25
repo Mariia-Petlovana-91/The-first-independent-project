@@ -28,6 +28,8 @@
 
 .image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .address {
@@ -968,6 +970,19 @@
   }
 }
 
+.what-we-do__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.what-we-do__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 -30px);
+}
+
 .what-we-do {
   position: relative;
 }
@@ -982,7 +997,7 @@
   background-color: #2f303a80;
   color: var(--text-color-light);
   position: absolute;
-  width: 100%;
+  min-width: 370px;
   min-height: 70px;
   top: 224px;
   text-transform: uppercase;
@@ -1006,12 +1021,25 @@
   }
 }
 
+.our-team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .our-team__item {
-    max-width: 354px;
+    margin-bottom: 0px;
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100 / 2 -30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    margin: 0px 30px 0px 0px;
+  }
+  .our-team__item:nth-child(4n + 4) {
+    margin-right: 0px;
   }
 }
 

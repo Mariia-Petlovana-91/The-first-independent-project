@@ -19,8 +19,7 @@
   margin-top: $mt;
   margin-left: $ml;
 }
-@mixin net-second-part($mw, $mt, $ml, $fb) {
-  max-width: $mw;
+@mixin net-second-part($mt, $ml, $fb) {
   margin-top: $mt;
   margin-left: $ml;
   flex-basis: $fb;

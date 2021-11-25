@@ -21,7 +21,8 @@
 
   // TABLET
   @media screen and(min-width:768px) {
-    @include net-second-part(354px, 30px, 30px, calc(100 / 2 -30px));
+    max-width: 354px;
+    @include net-second-part(30px, 30px, calc(100 / 2 -30px));
   }
 
   // LAPTOP

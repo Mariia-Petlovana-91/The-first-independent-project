@@ -8,6 +8,7 @@
   @include net-first-part(flex, wrap, -30px, -30px);
 }
 .what-we-do__item {
+  max-width: 354px;
   @include net-second-part(30px, 30px, calc(100% / 3 -30px));
 }
 .what-we-do {

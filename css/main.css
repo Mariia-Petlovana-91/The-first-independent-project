@@ -1343,8 +1343,28 @@
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-btn {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-btn {
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio-btn__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-btn__item {
+    margin-bottom: 15px;
+  }
 }
 
 .portfolio-btn__btn {
@@ -1368,13 +1388,50 @@
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .project__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
 .project__item {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  max-width: 450px;
   text-transform: capitalize;
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
+@media screen and (max-width: 1199px) {
+  .project__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .project__item:hover, .project__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .project__item {
+    max-width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 -30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__item {
+    max-width: 370px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 -30px);
+  }
 }
 
 .project__link:hover .project__overflow-appears,
@@ -1399,16 +1456,13 @@
   height: 100%;
   top: 0;
   left: 0;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
 .project__text-elements {
   padding: 19px 23px;
   background-color: #fff;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .project__name {

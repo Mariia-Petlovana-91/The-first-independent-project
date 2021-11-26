@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
 <body class="body">
-    <!--portfolio-->
+    <!--PORTFOLIO-->
       <header>
         <!-- MOBILE MENU START -->
         <div class="menu is-hidden" data-menu>
@@ -74,10 +74,12 @@
           </div>
         </div>
       </header>
-    <!--portfolio section 1 buttons and project-->
-    <main class="">
+    <!--PORTFOLIO SECTION-1 -->
+    <main>
     <section class="section">
       <div class="container">
+
+        <!-- BUTTON LIST -->
          <h2  class="second-title visually-hidden no-size">Фильтр кнопок</h2>
        <ul class="portfolio-btn list no-size">
         <li class="portfolio-btn__item"><button class="portfolio-btn__btn btn" type="button">Все</button></li>
@@ -86,13 +88,23 @@
         <li class="portfolio-btn__item"><button class="portfolio-btn__btn btn" type="button">Дизайн</button></li>
         <li class="portfolio-btn__item"><button class="portfolio-btn__btn btn" type="button">Маркетинг</button></li>
        </ul>
+       <!-- PROJECT LIST -->
        <h1 class="hero__title project__title-hero visually-hidden no-size">Проекти</h1>
-       <ul class="grade list no-size">
-       <li class="grade__item project__item" >
+       <ul class="project__list list no-size">
+       <li class="project__item" >
         <a class="project__link link" href="">
         <div class="project__overflow">
-          <img class="image" src="images/photo1.jpg" alt="computer with photo"
-           width="370" height="294">
+          <picture>
+            <source media="(min-width:1200px" srcset="./images/works/works-1-desktop.webp, ./images/works/works-1-desktop@2x.webp" type="image/webp">
+            <source media="(min-width:1200px" srcset="./images/works/works-1-desktop.jpg, ./images/works/works-1-desktop@2x.jpg">
+          
+            <source media="(min-width:768px" srcset="./images/works/works-1-tablet.webp, ./images/works/works-1-tablet@2x.webp" type="image/webp">
+            <source media="(min-width:768px" srcset="./images/works/works-1-tablet.jpg, ./images/works/works-1-tablet@2x.jpg">
+          
+            <source media="(min-width:480px" srcset="./images/works/works-1.webp, ./images/works/works-1@2x.webp" type="image/webp">
+            <source media="(min-width:768px" srcset=" ./images/works/works-1.jpg, ./images/works/works-1@2x.jpg">
+            <img class="image" src="./images/works/works-1.jpg" alt="computer with photo">
+          </picture>
            <p class="project__overflow-appears no-size">
            Технокряк это современная площадка
            распространения коронавируса. 
@@ -106,10 +118,21 @@
       </div>
         </a>
       </li>
-       <li class="grade__item project__item" >
+       <li class=" project__item" >
         <a class="project__link link" href="">
         <div class="project__overflow">
-          <img class="image" src="images/photo2.jpg" alt="two baseball plaeer" width="370" height="294">
+          <picture>
+            <source media="(min-width:1200px" srcset="./images/works/works-2-desktop.webp, ./images/works/works-2-desktop@2x.webp" type="image/webp">
+            <source media="(min-width:1200px" srcset=" ./images/works/works-2-desktop.jpg, ./images/works/works-2-desktop@2x.jpg">
+          
+            <source media="(min-width:768px" srcset="./images/works/works-2-tablet.webp, ./images/works/works-2-tablet@2x.webp" type="image/webp">
+            <source media="(min-width:768px" srcset="./images/works/works-2-tablet.jpg, ./images/works/works-2-tablet@2x.jpg">
+          
+            <source media="(min-width:480px" srcset=" ./images/works/works-2.webp, ./images/works/works-2@2x.webp" type="image/webp">
+            <source media="(min-width:480px" srcset=" ./images/works/works-2.jpg, ./images/works/works-2@2x.jpg">
+          
+            <img class="image" src="./images/works/works-2.jpg" alt="two baseball plaeer">
+          </picture>
           <p class="project__overflow-appears no-size">
           Технокряк это современная площадка
           распространения коронавируса.
@@ -123,10 +146,20 @@
        </div>
         </a>
       </li>
-       <li class="grade__item project__item" >
+       <li class=" project__item" >
         <a class="project__link link" href="">
         <div class="project__overflow">
-          <img class="image" src="images/photo3.jpg" alt="restaurant logo" width="370" height="294">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-3-desktop.webp, ./images/works/works-3-desktop@2x.webp" type="image/webp">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-3-desktop.jpg, ./images/works/works-3-desktop@2x.jpg">
+          
+          <source media="(min-width:768px" srcset=" ./images/works/works-3-tablet.webp, ./images/works/works-3-tablet@2x.webp" type="image/webp">
+          <source media="(min-width:768px" srcset=" ./images/works/works-3-tablet.jpg, ./images/works/works-3-tablet@2x.jpg">
+          
+          <source media="(min-width:480px" srcset=" ./images/works/works-3.webp, ./images/works/works-3@2x.webp" type="image/webp">
+          <source media="(min-width:480px" srcset=" ./images/works/works-3.jpg, ./images/works/works-3@2x.jpg">
+          
+          <img class="image" src="./images/works/works-3.jpg" alt="restaurant logo">
+          </picture>
           <p class="project__overflow-appears no-size">
           Технокряк это современная площадка
           распространения коронавируса.
@@ -135,15 +168,25 @@
           </p>
          </div>
         <div class="project__text-elements">
-         <h3 class="project__name no-size">Ресторан<span lang="en">Seafood</span></h3>
-         <p class="project__text no-size">Приложение</p>
+          <h3 class="project__name no-size">Ресторан<span lang="en">Seafood</span></h3>
+          <p class="project__text no-size">Приложение</p>
         </div>
         </a> 
       </li>
-       <li class="grade__item project__item" >
+       <li class=" project__item" >
         <a class="project__link link" href="">
         <div class="project__overflow">
-          <img class="image" src="images/photo4.jpg" alt="headphone" width="370" height="294">
+          <source media="(min-width:1200px" srcset="  ./images/works/works-4-desktop.webp,  ./images/works/works-4-desktop@2x.webp" type="image/webp">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-4-desktop.jpg, ./images/works/works-4-desktop@2x.jpg">
+          
+          <source media="(min-width:768px" srcset=" ./images/works/works-4-tablet.webp, ./images/works/works-4-tablet@2x.webp" type="image/webp">
+          <source media="(min-width:768px" srcset="./images/works/works-4-tablet.jpg,  ./images/works/works-4-tablet@2x.jpg">
+          
+          <source media="(min-width:480px" srcset=" ./images/works/works-4.webp, ./images/works/works-4@2x.webp" type="image/webp">
+          <source media="(min-width:480px" srcset="./images/works/works-4.jpg, ./images/works/works-4@2x.jpg">
+          
+          <img class="image" src="./images/works/works-4.jpg" alt="headphone">
+          </picture>
           <p class="project__overflow-appears no-size">
           Технокряк это современная площадка
           распространения коронавируса.
@@ -157,10 +200,20 @@
       </div>
         </a>
       </li>
-       <li class="grade__item project__item" >
+       <li class=" project__item" >
         <a class="project__link link" href="">
         <div class="project__overflow">
-          <img class="image" src="images/photo5.jpg" alt="two boxes" width="370" height="294">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-5-desktop.webp, ./images/works/works-5-desktop@2x.webp" type="image/webp">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-5-desktop.jpg, ./images/works/works-5-desktop@2x.jpg">
+          
+          <source media="(min-width:768px" srcset=" ./images/works/works-5-tablet.webp, ./images/works/works-5-tablet@2x.webp" type="image/webp">
+          <source media="(min-width:768px" srcset=" ./images/works/works-5-tablet.jpg, ./images/works/works-5-tablet@2x.jpg">
+          
+          <source media="(min-width:480px" srcset=" ./images/works/works-5.webp, ./images/works/works-5@2x.webp" type="image/webp">
+          <source media="(min-width:480px" srcset=" ./images/works/works-5.jpg, ./images/works/works-5@2x.jpg">
+          
+          <img class="image" src="./images/works/works-5.jpg" alt="two boxes">
+        </picture>
           <p class="project__overflow-appears no-size">
             Технокряк это современная площадка
             распространения коронавируса.
@@ -174,10 +227,21 @@
       </div>
         </a>
       </li>
-       <li class="grade__item project__item" >
+       <li class=" project__item" >
         <a class="project__link link" href="">
       <div class="project__overflow">
-          <img class="image" src="images/photo6.jpg" alt="monitor" width="370" height="294">
+        <source media="(min-width:1200px" srcset=" ./images/works/works-6-desktop.webp, ./images/works/works-6-desktop@2x.webp" type="image/webp">
+        <source media="(min-width:1200px" srcset=" ./images/works/works-6-desktop.jpg, ./images/works/works-6-desktop@2x.jpg">
+        
+        <source media="(min-width:768px" srcset=" ./images/works/works-6-tablet.webp, ./images/works/works-6-tablet@2x.webp" type="image/webp">
+        <source media="(min-width:768px" srcset=" ./images/works/works-6-tablet.jpg, ./images/works/works-6-tablet@2x.jpg">
+        
+        <source media="(min-width:480px" srcset=" ./images/works/works-6.webp, ./images/works/works-6@2x.webp" type="image/webp">
+        <source media="(min-width:480px" srcset=" ./images/works/works-6.jpg, ./images/works/works6@2x.jpg">
+        
+        <img class="image" src="./images/works/works-6.jpg" alt="monitor">
+        </picture>
+    
          <p class="project__overflow-appears no-size">
           Технокряк это современная площадка
           распространения коронавируса.
@@ -191,10 +255,21 @@
        </div>
         </a>
       </li>
-       <li class="grade__item project__item">
+       <li class=" project__item">
       <a class="project__link link" href="">
         <div class="project__overflow">
-        <img class="image" src="images/photo7.jpg" alt="unfolded book" width="370" height="294">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-7-desktop.webp, ./images/works/works-7-desktop@2x.webp" type="image/webp">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-7-desktop.jpg, ./images/works/works-7-desktop@2x.jpg">
+          
+          <source media="(min-width:768px" srcset=" ./images/works/works-7-tablet.webp, ./images/works/works-7-tablet@2x.webp" type="image/webp">
+          <source media="(min-width:768px" srcset=" ./images/works/works-7-tablet.jpg, ./images/works/works-7-tablet@2x.jpg">
+          
+          <source media="(min-width:480px" srcset=" ./images/works/works-7.webp, ./images/works/works-7@2x.webp" type="image/webp">
+          <source media="(min-width:480px" srcset=" ./images/works/works-7.jpg, ./images/works/works-7@2x.jpg">
+          
+          <img class="image" src="./images/works/works-7.jpg" alt="unfolded book">
+          </picture>
+        
         <p class="project__overflow-appears no-size">
           Технокряк это современная площадка
           распространения коронавируса.
@@ -208,10 +283,20 @@
       </div>
       </a>
       </li>
-       <li class="grade__item project__item" >
+       <li class=" project__item" >
         <a class="project__link link" href="">
         <div class="project__overflow">
-          <img class="image" src="images/photo8.jpg" alt="keychain made of paper" width="370" height="294">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-8-desktop.webp, ./images/works/works-8-desktop@2x.webp" type="image/webp">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-8-desktop.jpg, ./images/works/works-8-desktop@2x.jpg">
+          
+          <source media="(min-width:768px" srcset=" ./images/works/works-8-tablet.webp, ./images/works/works-8-tablet@2x.webp" type="image/webp">
+          <source media="(min-width:768px" srcset=" ./images/works/works-8-tablet.jpg, ./images/works/works-8-tablet@2x.jpg">
+          
+          <source media="(min-width:480px" srcset=" ./images/works/works-8.webp, ./images/works/works-8@2x.webp" type="image/webp">
+          <source media="(min-width:480px" srcset=" ./images/works/works-8.jpg, ./images/works/works-8@2x.jpg">
+          
+          <img class="image" src="./images/works/works-8.jpg" alt="keychain made of paper">
+          </picture>
       <p class="project__overflow-appears no-size">
         Технокряк это современная площадка
         распространения коронавируса.
@@ -225,10 +310,20 @@
       </div>
         </a>
       </li>
-       <li class="grade__item project__item" >
+       <li class=" project__item" >
         <a class="project__link link" href="">
         <div class="project__overflow">
-          <img class="image" src="images/photo9.jpg" alt="man typing text on laptop" width="370" height="294">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-9-desktop.webp, ./images/works/works-9-desktop@2x.webp" type="image/webp">
+          <source media="(min-width:1200px" srcset=" ./images/works/works-9-desktop.jpg, ./images/works/works-9-desktop@2x.jpg">
+          
+          <source media="(min-width:768px" srcset=" ./images/works/works-9-tablet.webp, ./images/works/works-9-tablet@2x.webp" type="image/webp">
+          <source media="(min-width:768px" srcset=" ./images/works/works-9-tablet.jpg, ./images/works/works-9-tablet@2x.jpg">
+          
+          <source media="(min-width:480px" srcset=" ./images/works/works-9.webp, ./images/works/works-9@2x.webp" type="image/webp">
+          <source media="(min-width:480px" srcset=" ./images/works/works-9.jpg, ./images/works/works-9@2x.jpg">
+          
+          <img class="image" src="./images/works/works-9.jpg" alt="man typing text on laptop"">
+        </picture>
         <p class="project__overflow-appears no-size">
           Технокряк это современная площадка
           распространения коронавируса.

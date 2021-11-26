@@ -2,12 +2,28 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  // justify-content: center;
-  // margin-bottom: 50px;
+
+  // TABLET
+  @media screen and(min-width:768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  // LAPTOP
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.portfolio-btn__item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-btn__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  // MOBILE
+  @media screen and(max-width:767px) {
+    margin-bottom: 15px;
+  }
 }
 .portfolio-btn__btn {
   @include font(16px, 1.66em, 0.03em);

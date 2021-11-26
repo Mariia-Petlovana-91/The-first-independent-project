@@ -14,7 +14,7 @@
   border-left: 1px solid #eeeeee;
 
   max-width: 450px;
-  @media screen and(max-width:1199px) {
+  @media screen and(max-width:768px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
